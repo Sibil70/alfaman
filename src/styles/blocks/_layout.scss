@@ -1,0 +1,228 @@
+html, body {
+    //background-color: #122f4a;
+    margin: 0;
+    background-color: $white-color;
+    font-family: $font-family-source;
+    color: $gray-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @media (max-width: $tablet-min-width) {
+      height: 100%;
+      overflow-x: hidden;
+    }
+  }
+  p{
+    margin-block-start: 0;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  ul li {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  }
+  iframe {
+    border: none;
+    margin: 0;
+  }
+  
+  .wrapper {
+    padding: 0;
+    //padding: 0 16px;
+  }
+  
+  .container {
+    padding-top: 45px;
+    max-width: 960px;
+    margin: 0 auto;
+    @media (min-width: $tablet-min-width) {
+      padding-top: 65px;
+    }
+  }
+  
+  .title {
+    margin: 0;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+  
+    &--main {
+      font-family: $font-family-condensed;
+      font-size: 40px;
+      font-stretch: condensed;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      letter-spacing: normal;
+      line-height: 2.4rem;
+  
+      @media (min-width: $tablet-min-width) {
+        font-size: 80px;
+        line-height: 62px;
+      }
+    }
+  
+    &--sub {
+      font-size: 10px;
+      font-weight: 600;
+      font-stretch: normal;
+      letter-spacing: 4px;
+  
+      @media (min-width: $tablet-min-width) {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+  }
+  
+  .content {
+    max-width: 300px;
+    margin: 0 auto;
+  
+    @media (min-width: $tablet-min-width) {
+      max-width: 618px;
+    }
+  }
+  
+  .text {
+    margin: 20px 0 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  
+    @media (min-width: $tablet-min-width) {
+      &:first-child {
+        margin-top: 33px;
+      }
+    }
+  }
+  
+  .buttons {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+  
+    @media (min-width: $tablet-min-width) {
+      padding-top: 30px;
+      padding-bottom: 50px;
+      &--inst {
+        padding-top: 40px;
+      }
+    }
+  }
+  
+  .button {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px 25px;
+    border: 1px solid #3897f0;
+    border-radius: 4px;
+    width: 200px;
+    text-decoration: none;
+  
+    &--inst {
+      width: 220px;
+      border-color: $white-color;
+  
+      &:hover {
+        border-color: $white-color;
+        background-color: $white-color;
+      }
+  
+      @media (max-width: $tablet-min-width) {
+        &:last-child {
+          margin-top: 16px;
+        }
+      }
+    }
+  
+    //&:last-child {
+    //  margin-top: 16px;
+    //}
+    //
+    //@media (min-width: $tablet-min-width) {
+    //  &:last-child {
+    //    margin-top: 0;
+    //    margin-left: 16px;
+    //  }
+    //}
+  
+    &--cta {
+      background-color: #3897f0;
+      border-color: #3897f0;
+    }
+  
+    &:hover {
+      //  background-color: $gray-color;
+      //  border-color: $gray-color;
+      //
+      //  .button__text {
+      //    color: $white-color;
+      //  }
+      //
+      //  .button__text--cta {
+      //    &:before {
+      //      border-color: $white-color;
+      //    }
+      //  }
+      .button__text--inst {
+        color: $black-color;
+      }
+    }
+  }
+  
+  .button__text {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: $gray-color;
+  
+    &--inst {
+      color: $white-color;
+    }
+  
+    &--cta {
+      color: $white-color;
+      position: relative;
+      padding-right: 15px;
+  
+      &:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-top: solid 2px $white-color;
+        border-right: solid 2px $white-color;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 5px;
+        right: 0;
+        box-sizing: border-box;
+      }
+    }
+  
+    &--arrow {
+  
+    }
+  }
+  .intruction-wrapper {
+    height: 82%;
+  }
+  .intruction {
+    height: 100%;
+  }
+  

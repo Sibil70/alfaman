@@ -1,0 +1,17 @@
+$white-color: #fff;
+$black-color: #000;
+$gray-color: #333;
+$light-gray-color: #979797;
+$green-color: #44a246;
+$font-family-source: 'Source Sans Pro', sans-serif;
+$font-family-sans: 'Open Sans', sans-serif;
+$font-family-condensed: 'Open Sans Condensed', sans-serif;
+$tablet-min-width: 600px;
+$desktop-min-width: 1200px;
+
+@import "./mixins";
+
+@import "./blocks/layout";
+@import "./blocks/content";
+@import "./blocks/titles";
+@import "./blocks/posts";

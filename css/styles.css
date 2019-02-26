@@ -1,0 +1,368 @@
+/* line 1, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+html, body {
+  margin: 0;
+  background-color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 600px) {
+  /* line 1, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* line 14, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+p {
+  margin-block-start: 0;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* line 20, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 24, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 29, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+iframe {
+  border: none;
+  margin: 0;
+}
+
+/* line 34, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.wrapper {
+  padding: 0;
+}
+
+/* line 39, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.container {
+  padding-top: 45px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  /* line 39, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+  .container {
+    padding-top: 65px;
+  }
+}
+
+/* line 48, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.title {
+  margin: 0;
+  font-weight: bold;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 56, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.title--main {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 40px;
+  font-stretch: condensed;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: normal;
+  line-height: 2.4rem;
+}
+
+@media (min-width: 600px) {
+  /* line 56, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+  .title--main {
+    font-size: 80px;
+    line-height: 62px;
+  }
+}
+
+/* line 70, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.title--sub {
+  font-size: 10px;
+  font-weight: 600;
+  font-stretch: normal;
+  letter-spacing: 4px;
+}
+
+@media (min-width: 600px) {
+  /* line 70, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+  .title--sub {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+/* line 83, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  /* line 83, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+  .content {
+    max-width: 618px;
+  }
+}
+
+/* line 92, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.text {
+  margin: 20px 0 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  /* line 103, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+  .text:first-child {
+    margin-top: 33px;
+  }
+}
+
+/* line 109, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.buttons {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  /* line 109, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+  .buttons {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  /* line 117, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+  .buttons--inst {
+    padding-top: 40px;
+  }
+}
+
+/* line 123, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.button {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 8px 25px;
+  border: 1px solid #3897f0;
+  border-radius: 4px;
+  width: 200px;
+  text-decoration: none;
+}
+
+/* line 134, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.button--inst {
+  width: 220px;
+  border-color: #fff;
+}
+
+/* line 138, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.button--inst:hover {
+  border-color: #fff;
+  background-color: #fff;
+}
+
+@media (max-width: 600px) {
+  /* line 144, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+  .button--inst:last-child {
+    margin-top: 16px;
+  }
+}
+
+/* line 161, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.button--cta {
+  background-color: #3897f0;
+  border-color: #3897f0;
+}
+
+/* line 179, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.button:hover .button__text--inst {
+  color: #000;
+}
+
+/* line 185, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.button__text {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333;
+}
+
+/* line 195, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.button__text--inst {
+  color: #fff;
+}
+
+/* line 199, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.button__text--cta {
+  color: #fff;
+  position: relative;
+  padding-right: 15px;
+}
+
+/* line 204, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.button__text--cta:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 5px;
+  right: 0;
+  box-sizing: border-box;
+}
+
+/* line 222, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.intruction-wrapper {
+  height: 82%;
+}
+
+/* line 225, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_layout.scss */
+.intruction {
+  height: 100%;
+}
+
+/* line 1, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.posts__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 5, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  height: 520px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 12, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__media {
+  width: 100%;
+  min-height: 316px;
+  max-height: 316px;
+  overflow: hidden;
+}
+
+/* line 18, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__image {
+  display: block;
+  width: 100%;
+}
+
+/* line 22, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__content {
+  margin: 12px;
+}
+
+/* line 25, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__likes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 12px;
+  font-size: 14px;
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 34, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__likes-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+/* line 39, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__comment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 12px;
+  font-size: 14px;
+}
+
+/* line 46, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__comment-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+/* line 51, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__cta {
+  background-color: #3897f0;
+}
+
+/* line 55, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 18px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  padding: 12px;
+}
+
+/* line 68, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__link-icon {
+  display: block;
+  width: 6px;
+  height: 10px;
+  fill: #fff;
+}
+
+/* line 75, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__text-wrap {
+  clear: both;
+  font-size: 14px;
+  display: inline-block;
+  overflow: hidden;
+  max-height: 90px;
+  width: 100%;
+}
+
+/* line 85, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__date {
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  opacity: 0.6;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*# sourceMappingURL=../../css/styles.map */
