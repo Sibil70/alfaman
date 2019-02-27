@@ -260,8 +260,6 @@ iframe {
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: height  1s;
-  height: 0;
 }
 
 @media screen and (max-width: 780px) {
@@ -272,7 +270,7 @@ iframe {
   }
 }
 
-/* line 18, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+/* line 16, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
 .post__media {
   display: block;
   height: 0;
@@ -282,7 +280,7 @@ iframe {
   position: relative;
 }
 
-/* line 26, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+/* line 24, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
 .post__image {
   position: absolute;
   top: 50%;
@@ -296,51 +294,12 @@ iframe {
   max-width: 100%;
 }
 
-/* line 38, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
-.post__content {
-  margin: 12px;
-}
-
-/* line 41, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
-.post__likes {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-bottom: 12px;
-  font-size: 14px;
-  float: left;
-  margin-right: 15px;
-}
-
-/* line 50, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
-.post__likes-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 5px;
-}
-
-/* line 55, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
-.post__comment {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-bottom: 12px;
-  font-size: 14px;
-}
-
-/* line 62, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
-.post__comment-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 5px;
-}
-
-/* line 67, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+/* line 36, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
 .post__cta {
   background-color: #3897f0;
 }
 
-/* line 71, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+/* line 40, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
 .post__link {
   text-decoration: none;
   display: flex;
@@ -355,7 +314,49 @@ iframe {
   padding: 12px;
 }
 
-/* line 84, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+/* line 53, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__content {
+  margin: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 59, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__likes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 12px;
+  font-size: 14px;
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 68, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__likes-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+/* line 73, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__comment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 12px;
+  font-size: 14px;
+}
+
+/* line 80, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__comment-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+/* line 85, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
 .post__link-icon {
   display: block;
   width: 6px;
@@ -363,10 +364,9 @@ iframe {
   fill: #fff;
 }
 
-/* line 91, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+/* line 92, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
 .post__text-wrap {
   clear: both;
-  font-size: 14px;
   display: inline-block;
   overflow: hidden;
   height: 90px;
@@ -374,12 +374,24 @@ iframe {
   transition: height  1s;
 }
 
-/* line 99, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
-.post__text-wrap:hover {
-  height: 100%;
+@media screen and (max-width: 780px) {
+  /* line 92, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+  .post__text-wrap {
+    height: 55px;
+  }
 }
 
-/* line 105, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+/* line 104, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.js-show-comment {
+  height: 95%;
+}
+
+/* line 107, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__text-container {
+  font-size: 14px;
+}
+
+/* line 112, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
 .post__date {
   font-size: 10px;
   line-height: 12px;
@@ -388,6 +400,12 @@ iframe {
   opacity: 0.6;
   color: #000;
   font-family: "Open Sans", sans-serif;
+}
+
+/* line 122, D:/LOFT/sites/ddwork/alfaman/src/styles/blocks/_posts.scss */
+.post__btn {
+  cursor: pointer;
+  letter-spacing: 0.2rem;
 }
 
 /*# sourceMappingURL=../../css/styles.map */
